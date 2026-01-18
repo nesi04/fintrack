@@ -35,7 +35,7 @@ app.use('/api/transactions',auth,require('./routes/transactions'));
 app.use('/analytics', require('./routes/analytics'));
 
 
-const PORT =process.env.port||4001;
+const PORT =process.env.port;
 app.listen(PORT,()=>{
     console.log(`Started listening on port ${PORT}`);
 });
