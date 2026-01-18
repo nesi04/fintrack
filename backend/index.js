@@ -32,6 +32,7 @@ app.get('/health/db',async(req,res)=>{
 app.use('/auth',require('./routes/auth'));
 app.use('/api/accounts',auth,require('./routes/accounts'));
 app.use('/api/transactions',auth,require('./routes/transactions'));
+app.use('/analytics', require('./routes/analytics'));
 
 
 const PORT =process.env.port||4001;
